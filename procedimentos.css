@@ -1,0 +1,387 @@
+
+/* ========================================
+   PÁGINA DE PROCEDIMENTOS
+======================================== */
+
+/* ========================================
+   HEADER
+======================================== */
+
+.procedures-header .logo img {
+    width: 150px;
+    height: auto;
+}
+
+.procedures-header .header__content {
+    position: relative;
+    left: 85px;
+}
+
+.procedures-header .header__cta {
+    margin-left: auto;
+    margin-right: 60px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 22px;
+    border-radius: 30px;
+    background: #8b0a3a;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    white-space: nowrap;
+    box-shadow: 0 6px 18px rgba(139, 10, 58, 0.20);
+    animation: pulse-cta 2s infinite;
+    transition: 0.3s ease;
+}
+
+.procedures-header .header__cta i {
+    font-size: 17px;
+}
+
+.procedures-header .header__cta:hover {
+    background: #d5a567;
+    color: #ffffff;
+    animation: none;
+    transform: translateY(-2px);
+}
+
+@keyframes pulse-cta {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.04);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+/* ========================================
+   ABERTURA DA PÁGINA
+======================================== */
+
+.procedures-page-hero {
+    position: relative;
+    padding: 150px 0 65px;
+    text-align: center;
+}
+
+.procedures-page-hero + .procedure-detail {
+    margin-top: 0;
+}
+
+.procedures-page-hero .section-label {
+    margin-bottom: 8px;
+}
+
+.procedures-page-hero h1 {
+    margin: 0;
+    font-family: "Playfair Display", serif;
+    font-size: 48px;
+    line-height: 1.1;
+    color: #30282a;
+}
+
+.procedures-page-hero h1 em {
+    color: #8b0a3a;
+    font-style: italic;
+}
+
+.procedures-page-intro {
+    max-width: 650px;
+    margin: 20px auto 0;
+    font-size: 17px;
+    line-height: 1.6;
+    color: #4a4143;
+}
+
+
+/* ========================================
+   ORNAMENTO
+======================================== */
+
+.procedures-page-hero .procedures-ornament {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    margin: 25px auto 0;
+}
+
+.procedures-page-hero .procedures-ornament span {
+    width: 65px;
+    height: 1px;
+    background: #c9975b;
+}
+
+.procedures-page-hero .procedures-ornament img {
+    width: 42px;
+    height: auto;
+    object-fit: contain;
+}
+
+
+/* ========================================
+   CATEGORIAS
+======================================== */
+
+.procedure-detail {
+    padding: 90px 0;
+}
+
+.procedure-detail__heading {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.procedure-detail__heading h2 {
+    margin: 8px 0 0;
+    font-family: "Playfair Display", serif;
+    font-size: 42px;
+    line-height: 1.15;
+    color: #30282a;
+}
+
+.procedure-detail__heading h2 em {
+    color: #8b0a3a;
+    font-style: italic;
+}
+
+/* BOTÕES DOS PROCEDIMENTOS */
+
+.procedure-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 24px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+/* Botão nas seções claras */
+
+.procedure-detail:not(.procedure-detail--wine) .procedure-button {
+    border: 1px solid #8b0a3a;
+    background: #8b0a3a;
+    color: #ffffff;
+}
+
+.procedure-detail:not(.procedure-detail--wine) .procedure-button:hover {
+    background: #d5a567;
+    border-color: #d5a567;
+    color: #ffffff;
+}
+
+/* Botão na seção de emagrecimento */
+
+.procedure-detail--wine .procedure-button {
+    border: 1px solid #d5a567;
+    background: #fffaf8;
+    color: #8b0a3a;
+}
+
+.procedure-detail--wine .procedure-button:hover {
+    background: #d5a567;
+    color: #ffffff;
+}
+
+/* GRID DOS PROCEDIMENTOS */
+
+.procedure-detail__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+
+/* CARD INDIVIDUAL */
+
+.procedure-detail__card {
+    padding: 30px;
+    background: #fffaf8;
+    border: 1px solid #e8c9c2;
+    border-radius: 24px;
+    text-align: center;
+}
+
+.procedure-detail__card h3 {
+    margin: 0 0 15px;
+    font-family: "Playfair Display", serif;
+    font-size: 23px;
+    color: #7f0a36;
+}
+
+.procedure-detail__card p {
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #4a4143;
+}
+
+
+/* ========================================
+   SEÇÃO DE EMAGRECIMENTO
+======================================== */
+
+.procedure-detail--wine {
+    background: #8b0a3a;
+}
+
+.procedure-detail--wine .procedure-detail__heading h2,
+.procedure-detail--wine .procedure-detail__heading .section-label {
+    color: #ffffff;
+}
+
+.procedure-detail--wine .procedure-detail__heading h2 em {
+    color: #d5a567;
+}
+
+.procedure-detail--wine .procedure-detail__card {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.25);
+}
+
+.procedure-detail--wine .procedure-detail__card h3 {
+    color: #ffffff;
+}
+
+.procedure-detail--wine .procedure-detail__card p {
+    color: #f8e9e5;
+}
+
+/* ========================================
+   RESPONSIVIDADE - PROCEDIMENTOS
+======================================== */
+
+@media (max-width: 900px) {
+
+    /* HEADER */
+    .procedures-header .header__content {
+        left: 0;
+    }
+
+    .procedures-header .header__cta {
+        margin-right: 0;
+    }
+
+    /* ABERTURA */
+    .procedures-page-hero {
+        padding: 130px 0 55px;
+    }
+
+    .procedures-page-hero h1 {
+        font-size: 40px;
+    }
+
+    /* GRID */
+    .procedure-detail__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #facial .procedure-detail__grid {
+        max-width: 100%;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    /* ABERTURA */
+    .procedures-page-hero {
+        padding: 120px 20px 50px;
+    }
+
+    .procedures-page-hero h1 {
+        font-size: 34px;
+        line-height: 1.15;
+    }
+
+    .procedures-page-intro {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    /* ORNAMENTO */
+    .procedures-page-hero .procedures-ornament {
+        gap: 12px;
+        margin-top: 20px;
+    }
+
+    .procedures-page-hero .procedures-ornament span {
+        width: 45px;
+    }
+
+    .procedures-page-hero .procedures-ornament img {
+        width: 36px;
+    }
+
+
+    /* SEÇÕES */
+    .procedure-detail {
+        padding: 65px 20px;
+    }
+
+    .procedure-detail__heading {
+        margin-bottom: 35px;
+    }
+
+    .procedure-detail__heading h2 {
+        font-size: 34px;
+        line-height: 1.2;
+    }
+
+
+    /* GRID */
+    .procedure-detail__grid,
+    #facial .procedure-detail__grid {
+        grid-template-columns: 1fr;
+        max-width: 100%;
+        gap: 20px;
+    }
+
+
+    /* CARDS */
+    .procedure-detail__card {
+        padding: 25px 20px;
+        border-radius: 20px;
+    }
+
+    .procedure-detail__card h3 {
+        font-size: 22px;
+        margin-bottom: 12px;
+    }
+
+    .procedure-detail__card p {
+        font-size: 15px;
+        line-height: 1.55;
+    }
+
+
+    /* BOTÕES */
+    .procedure-detail .procedure-button,
+    .procedure-detail--wine .procedure-button {
+        margin-top: 18px;
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+
+    /* HEADER DA PÁGINA */
+    .procedures-header .header__content {
+        left: 0;
+    }
+
+    .procedures-header .header__cta {
+        margin-right: 0;
+    }
+
+}
