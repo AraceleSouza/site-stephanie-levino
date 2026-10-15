@@ -1,36 +1,49 @@
-# Site — Stephanie Levino Esteticista
+# Site Institucional — Stephanie Levino
 
-Estrutura criada a partir do design enviado.
+Site institucional desenvolvido para a profissional de estética Stephanie Levino, com o objetivo de apresentar seus serviços e fortalecer sua presença digital.
 
-## Arquivos
+O projeto foi desenvolvido com HTML5, CSS3 e JavaScript, priorizando uma identidade visual personalizada, navegação intuitiva e adaptação para dispositivos móveis.
 
-- `index.html` — estrutura e conteúdo da página.
-- `style.css` — identidade visual, layout, responsividade e componentes.
-- `script.js` — menu mobile e modais dos procedimentos.
-- `assets/` — imagens que precisam ser adicionadas/substituídas.
+## Demonstração
 
-## Assets esperados
+Acesse o site publicado:
 
-Coloque na pasta `assets`:
+**[Visualizar site](https://aracelesouza.github.io/site-stephanie-levino/)**
 
-- `logo.png` — logo usada no cabeçalho.
-- `logo-grande.png` — logo/elemento visual grande do hero.
-- `logo-footer.png` — versão da logo para o rodapé.
-- `stephanie-retrato.jpg` — foto da Stephanie da seção Sobre.
-- `atendimento.jpg` — foto da Stephanie realizando atendimento.
-- `emagrecimento.jpg` — imagem usada no card de Emagrecimento.
-- `produtos-spa.jpg` — imagem da seção CTA final.
+## Tecnologias utilizadas
 
-As imagens podem ser trocadas sem alterar a estrutura HTML/CSS.
+- HTML5
+- CSS3
+- JavaScript
 
-## Ajustes importantes antes da publicação
+## Funcionalidades
 
-1. Substituir o número de WhatsApp de exemplo pelo número real.
-2. Confirmar o @ do Instagram da Stephanie.
-3. Substituir as imagens pelos arquivos originais em boa resolução.
-4. Revisar os nomes e descrições dos procedimentos com a Stephanie.
-5. Testar o site no celular antes de publicar.
+- Página inicial com apresentação da profissional.
+- Página dedicada aos procedimentos estéticos.
+- Layout responsivo para diferentes tamanhos de tela.
+- Navegação entre as páginas.
+- Links e botões de contato.
+- Configuração básica de SEO para mecanismos de busca.
 
-## Observação
+## SEO e publicação
 
-Os textos foram organizados com base no material enviado e no layout de referência. O CSS está separado do HTML e com indentação consistente para facilitar manutenção e apresentação no portfólio.
+- Títulos e meta descriptions configurados.
+- Sitemap XML.
+- Google Search Console configurado.
+- Páginas indexadas pelo Google.
+- Hospedagem com GitHub Pages.
+
+## Estrutura do projeto
+
+- `index.html` — Página inicial.
+- `procedimentos.html` — Página de procedimentos.
+- `style.css` — Estilos e identidade visual.
+- `script.js` — Scripts e interações da interface.
+- `assets/` — Imagens e outros recursos visuais.
+- `sitemap.xml` — Mapa do site.
+
+## Desenvolvido por
+
+**Aracele Souza**
+
+Desenvolvedora Web | HTML, CSS e JavaScript
